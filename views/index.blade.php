@@ -2,6 +2,7 @@
 @section('content')
 
     <section class="head-main">
+      <h2>name: {{$name}}</h2>
       <h4 class="section">THE ULTIMATE LUXURY EXPERIENCE</h4>
       <h2 class="title">The Perfect Base For You</h2>
       <div>

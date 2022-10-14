@@ -1,13 +1,39 @@
 @extends('layout')
 @section('content')
+
+
 <section class="head-main">
       <h4 class="section">THE ULTIMATE LUXURY</h4>
       <h2 class="title">Ultimate Room</h2>
       <div class="head-main__buttons">
-      <a href="./index.html">Home</a>
+      <a href="./index.php">Home</a>
         <span>|</span>
         <a class="head-main__buttons--sepia" href="">Rooms</a>
       </div>
+      <div>
+        <h1>title</h1>
+        <h1>{{$data}}</h1>
+<table border = "1">
+<tr>
+<td>Id</td>
+<td>Room Type</td>
+<td>Room number</td>
+<td>Status</td>
+<td>Request</td>
+</tr>
+@foreach ($data as $room)
+<tr>
+<td>{{ $room->id }}</td>
+<td>{{ $room->room_type }}</td>
+<td>{{ $room->room_number }}</td>
+<td>{{ $room->status }}</td>
+<td>{{ $room->special_request }}</td>
+</tr>
+@endforeach
+</table>
+   
+
+    </div>
     </section>
     <section class="rooms-list">
       <div>
@@ -37,6 +63,8 @@
           </div>
         </div>
         <div class="block-center-room">
+    
+
           <h3 class="sub-title">Minimal Duplex Room</h3>
           <p class="paragraph">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do

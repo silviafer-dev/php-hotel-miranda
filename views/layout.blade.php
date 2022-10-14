@@ -1,18 +1,18 @@
 <!doctype html>
 <html>
 <head>
-   @include('head')
+   @include ('head')
 </head>
 <body>
 <div class="header">
    <header class="row">
-       @include('header')
+       @include ('header')
    </header>
    <main  >
            @yield('content')
    </main>
    <footer >
-       @include('footer')
+         @include ('footer')
    </footer>
 </div>
 </body>
